@@ -1,4 +1,8 @@
 # banner-component
+``` 
+This App allow the user to submit banners with image thumbnail and redirect Url.
+
+```
 
 ### functions
 
