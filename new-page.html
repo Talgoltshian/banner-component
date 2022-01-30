@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="banner.style.css" />
+</head>
+<body onload= "displayAllStorageBanners()">
+    <div class="banner-form">
+        <form action="" method="POST" onsubmit="return false">
+            Banner IMG URL: <br><br>
+            <input required="required" name = "b" type="text" id="Banner-IMG-URL"><br><br>
+            Redirect Link: <br><br>
+            <input required="required" name = "a" type="text" id="Redirect-Link"><br><br>
+            <input class="submit-form" type="submit" value="Submit" onclick="createNewBanner('banners-list',document.getElementById('Redirect-Link').value,document.getElementById('Banner-IMG-URL').value)">
+        </form>
+    </div>
+    <div class="nav-bar">
+        <div class="local-storage-buttons">
+            <button onclick="onClickSaveData()" class="button-save">Save</button>
+            <button onclick="ClearLocalStorage()" class="button-clear">Clear</button>
+        </div>
+
+    </div>
+    <div id="banners-list"></div>
+    <script type="text/javascript" src="banner.component.js"></script>
+</body>
+</html>
